@@ -6,10 +6,10 @@ prompts = [
 sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
 
 llm = LLM(
-    model="/vision/u/jennyxu6/systems/Llama-3.2-3B",
+    model="Llama-3.2-3B",
     dtype="float16",
     tensor_parallel_size=1,
-    speculative_model="/vision/u/jennyxu6/systems/Llama-3.2-1B",
+    speculative_model="Llama-3.2-1B",
     num_speculative_tokens=5,
     max_model_len=26000
 )
